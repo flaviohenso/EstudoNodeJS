@@ -7,9 +7,8 @@ const Product = mongoose.model('Product')
 module.exports = {
 
     async index(req, res) {
-
-        const { page = 1 } = req.query;// req.query é para pegar os paramentros GET
-        const products = await Product.paginate({}, { page, limit: 10 })
+        const { page = 1,limit = 10 } = req.query;// req.query é para pegar os paramentros GET
+        const products = await Product.paginate({}, { page, limit: Number.parseInt(limit) })
 
         return res.json(products)
     },
