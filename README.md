@@ -1,8 +1,13 @@
 # EstudoNodeJS
+
 Estudo sobre nodeJS, desenvolvendo API rest
 
-<h2>Comandos importante</h2>
-Observação: Todos os comandos devem ser executador com a permissão de super usuário.
+  - BackEnd
+  - API Rest
+  - Docker
 
-##Lista os containers: docker ps
-##Executar o container que foi criado no Docker: docker start <ID do Container>
+# Comandos importante
+
+  - Lista os containers: docker ps
+  - Executar o container que foi criado no Docker: docker start "<ID do Container>"
+
